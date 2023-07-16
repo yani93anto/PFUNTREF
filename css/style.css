@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@200&display=swap');
 header {
     background-color: #00425A;
     color: #fff;
@@ -11,6 +13,10 @@ header {
     right: 0;
   }
   
+* {
+font-family: "Poppins", "Helvet";
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -44,8 +50,6 @@ nav {
     height: auto;
   }
   
-.con {
-    margin-top: 20px;
-    flex: 1;
-  }
-  
+#title {
+  font-family: "Belanosima" !important;
+}
