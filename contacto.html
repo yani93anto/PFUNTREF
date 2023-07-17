@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="./img/letra-u.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--<script src="https://kit.fontawesome.com/cee4e31326.js" crossorigin="anonymous"></script>-->
+</head>
+<body>
+    <header>
+        <p><nav>
+            <ul>
+                <li><a href="./index.html#quienes">Quiénes Somos</a></li>
+                <li><a href="./index.html#elegirnos">¿Por Qué Elegirnos?</a></li>
+                <li><a href="./index.html#propuesta">Propuesta Educativa</a></li>
+                <li><a href="./index.html#noticias">Ultimas Noticias</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav></p>
+    </header>
+    <main id="main2" class="main2">
+        <section class="formSection">
+        <div class="formSection__content">
+        </div>
+        <form action="https://formspree.io/f/xyyqyrgy" method="POST" class="formSection__form">
+            <fieldset class="formSection__fieldset">
+            <label for="full-name" class="formSection__label">Nombre completo</label>
+            <input type="text" name="name" id="full-name" class="formSection__input" placeholder="Nombre y apellido" required=""><br>
+            <label for="email-address" class="formSection__label">Correo electrónico</label>
+            <input type="email" name="replyto" id="email-address" class="formSection_input" placeholder="email@dominio.com" required=""><br>
+            <label for="subject" class="formSection__label">Asunto</label>
+            <textarea rows="1" name="message" id="message" class="formSection__textarea" placeholder="Escribe un asunto" required=""></textarea><br>
+            <label for="message" class="formSection__label">Mensaje</label>
+            <textarea rows="5" name="message" id="message" class="formSection__textarea" placeholder="Escribe tu mensaje" required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <input type="submit" value="Enviar" id="submit" class="formSection__submit">
+        </form>
+        </section>
+    </main>
+  <footer id="pie">
+    <div id="redes" class="footer__item">
+        <h2 class="footer__title">Redes sociales</h2>
+        <div class="footer__social">
+            <span class="footer__social-link pe-1"><a href="https://es-la.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="./img/facebook.svg" alt="facebook"></a></span>
+            <span class="footer__social-link pe-1"><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.svg" alt="instagram"></a></span>
+            <span class="footer__social-link pe-1"><a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer"><img src="./img/twitter.svg" alt="twitter"></a></span>
+            <span class="footer__social-link pe-1"><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><img src="./img/youtube.svg" alt="youtube"></a></span>
+        </div>
+    </div>
+    <div id="mapa" class="footer__item">
+        <h2 class="footer__title">Instituto</h2>
+        <div class="footer__direccion">Valentín Gómez 4828 38, Caseros, Provincia de Buenos Aires</div>
+        <div class="footer__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9655173501587!2d-58.56691698976352!3d-34.605033457453004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd08da6711928d!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20-%20Sede%20Caseros%20I!5e0!3m2!1ses-419!2sar!4v1689379054542!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div id="contacto" class="footer__item contacto">
+        <h2 class="footer__title">Contacto</h2>
+        <div class="footer__contact-info">
+            <div class="footer__contact-item email">E-mail: <a href="mailto:untrefschool@untref.edu" target="_blank" rel="noopener noreferrer">untrefschool@untref.edu</a></div>
+            <div class="footer__contact-item telefono">Tel: <a href="tel:+541112345678" target="_blank" rel="noopener noreferrer">+54 11 1234 5678</a></div>
+            <div class="footer__contact-item telefono">WhatsApp: <a href="tel:+5491112345678" target="_blank" rel="noopener noreferrer">+54 9 11 1234 5678</a></div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

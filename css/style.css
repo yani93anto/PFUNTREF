@@ -82,7 +82,8 @@ body{
 
 /*---------Main---------*/
 
-main{padding: 30px;}
+#main1{padding: 30px;}
+#main2{padding: 150px;}
 
 /*Title*/
 #title {
