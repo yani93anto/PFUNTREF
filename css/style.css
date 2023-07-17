@@ -26,6 +26,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 200;
 }
 
 nav {
@@ -82,12 +83,41 @@ body{
 
 /*---------Main---------*/
 
-#main1{padding: 30px;}
+#main1{
+  padding-top: 70px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
 #main2{padding: 150px;}
+
+.rel {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
 /*Title*/
 #title {
   font-family: "Belanosima" !important;
+  font-size: 70px;
+  color: #EFF5F5;
+  text-shadow: 5px 5px 5px black;
+  text-decoration-color: #181823;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://washingtonschool.edu.ar/wp-content/themes/washington/img/headers/nivel-primario.jpg);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  height: 200px;
+}
+
+.hide{
+  position: absolute;
+  opacity: 0;
+  top: -90px;
 }
 
 footer {
