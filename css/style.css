@@ -16,8 +16,9 @@
   
 header {
   background-color: var(--header-color);
-  color: #EFF5F5;
-  padding: 20px;
+  color: var(--body-color);
+  padding: 22px;
+  font-weight: 800;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,17 +54,17 @@ nav ul li {
   
 nav ul li a {
   display: flex;
-  color: #EFF5F5;
+  color: var(--body-color);
   text-decoration: none;
   padding: 10px;
   position: relative;
   margin: 15px;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   justify-content: center;
 }
 
-nav ul li a:before{
+nav ul li a:before {
   content:'';
   background: var(--header2-color);
   position: absolute;
@@ -72,23 +73,27 @@ nav ul li a:before{
   height: 2px;
   transition: 0.5s;
 }
-nav ul li a:hover::before{
+nav ul li a:hover::before {
   width: 100%;
 }
 
-body{
+body {
   padding: 0px;
   margin: 0px;
 }
 
 /*---------Main---------*/
 
-#main1{
+#main1 {
   padding-top: 70px;
   padding-left: 0px;
   padding-right: 0px;
+  font-size: 20px;
+  color: var(--buttonborder-color);
 }
-#main2{padding: 150px;}
+#main2 {
+  padding: 150px;
+}
 
 .rel {
   position: relative;
@@ -100,9 +105,9 @@ body{
 #title {
   font-family: "Belanosima" !important;
   font-size: 70px;
-  color: #EFF5F5;
-  text-shadow: 5px 5px 5px black;
-  text-decoration-color: #181823;
+  color: var(--body-color);
+  text-shadow: 5px 5px 5px var(--buttonborder-color);
+  text-decoration-color: var(--buttonborder-color);
   justify-content: center;
   align-items: center;
   background-image: url(https://washingtonschool.edu.ar/wp-content/themes/washington/img/headers/nivel-primario.jpg);
@@ -114,73 +119,187 @@ body{
   height: 200px;
 }
 
-.hide{
+.hide {
   position: absolute;
   opacity: 0;
   top: -90px;
 }
 
+#firma {
+  font-style: italic;
+}
+
 footer {
   background-color: var(--footer-color);
-  color: #EFF5F5;
+  color: var(--body-color);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: start;
   position: relative;
+  padding-bottom: 200px;
+  height: 200px;
   bottom: 0;
   left: 0;
   right: 0;
+  font-size: 20px;
 }
 
-.footer__title {
+.footer-t {
   display: flex;
   justify-content: space-around;
 }
 
-/*** Responsive */
-@media(width <48rem){
-  /*Tablets */
-  main{
-      width: 98%;
-  }
-  section{
-      padding:0rem;
-  }
-  section>div{
-      flex-wrap:wrap;
-      flex-direction: column;
-      align-items: center;
-  }
-  .card, .formulario, footer>div{
-      width:100%;
-  }
-  .card{
-      max-width: 31.25rem;
-  }
-  footer>div{
-      margin-bottom: 1.25rem;
-  }
-  footer ul{
-      display:flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-  }
-  .contacto{
-      text-align: center;
-  }
-  footer{
-      flex-wrap:wrap;
-      flex-direction: column;
-     
-  }
-  
-}
-@media(width <28.75rem){
-  /*smartphones */
-.bg-header{
-  height: 37.5rem;
+.footer-i {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
+#redes {
+  order: 1;
+}
+
+#mapa {
+  order: 2;
+  text-align: center;
+}
+
+#ubicacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+iframe {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  border-width: 10px;
+  border-style: inset;
+  border-color: var(--header2-color);
+}
+
+#contacto {
+  order: 3;
+}
+
+.footer-c{
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+/*Responsive*/
+@media(max-width: 768px)
+{
+  nav ul li a {
+    padding-top: 0px;
+    margin: 10px;
+    font-size: 15px;
+  }
+
+  nav ul li a:before {
+    bottom: 10px;
+  }
+
+  nav ul li a:hover::before {
+    width: 0%;
+  }
+
+  /*Tablets*/
+  #main1{
+      width: 100%;
+      font-size: 15px;
+  }
+
+  #title {
+    font-size: 50px;
+    width: 100vw;
+  }
+    
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+    padding-bottom: 300px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    row-gap: 30px;
+    column-gap: 30px;
+    font-size: 15px;
+  }
+
+  #mapa {
+    order: 3;
+  }
+
+  iframe {
+    position: relative;
+    width: 250px;
+    height: 150px;
+  }
+
+  #contacto {
+    order: 2;
+  }
+
+  .footer-c{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+@media(max-width: 540px){
+  /*smartphones*/
+
+  .rel {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  header{
+    height: 37.5rem;
+
+  }
+
+  #title {
+    font-size: 50px;
+    width: 100vw;
+  }
+
+  footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  #mapa {
+    order: 2;
+  }
+
+  #contacto {
+    order: 3;
+  }
 }
