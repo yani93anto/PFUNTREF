@@ -18,10 +18,11 @@ header {
   background-color: var(--header-color);
   color: var(--body-color);
   padding: 10px;
+  margin: 0;
   font-weight: 800;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   position: sticky;
@@ -297,6 +298,9 @@ iframe {
 }
 @media(max-width: 555px){
   /*Smartphones*/
+  nav ul li a {
+    font-size: 10px;
+  }
 
   .rel {
     position: relative;
@@ -331,5 +335,12 @@ iframe {
 
   #contacto {
     order: 3;
+  }
+}
+
+@media(max-width: 555px){
+  /*Smartphones*/
+  nav ul li a {
+    font-size: 10px;
   }
 }
