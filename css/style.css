@@ -12,15 +12,16 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  margin: 0px;
 }
   
 header {
   background-color: var(--header-color);
   color: var(--body-color);
-  padding: 10px;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   font-weight: 800;
-  display: flex;
+  display: block;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -30,11 +31,12 @@ header {
   left: 0;
   right: 0;
   z-index: 200;
+  height: 50px;
 }
 
 nav {
   display: block;
-  top: 0;
+  top: 0px;
   left: 0;
   right: 0;
 }
@@ -59,7 +61,7 @@ nav ul li a {
   text-decoration: none;
   padding: 10px;
   position: relative;
-  margin: 15px;
+  margin: 0px;
   font-size: 20px;
   text-align: center;
   justify-content: center;
@@ -74,6 +76,7 @@ nav ul li a:before {
   height: 2px;
   transition: 0.5s;
 }
+
 nav ul li a:hover::before {
   width: 100%;
 }
@@ -86,21 +89,18 @@ body {
 /*---------Main---------*/
 
 #main1 {
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
   font-size: 20px;
   font-weight: 800;
   color: var(--buttonborder-color);
 }
+
 #main2 {
   padding: 150px;
 }
 
 .rel {
   position: relative;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin: 30px;
 }
 
 /*Title*/
@@ -124,11 +124,23 @@ body {
 .hide {
   position: absolute;
   opacity: 0;
-  top: -120px;
+  top: -60px;
+}
+
+#main1 h2{
+  margin-bottom: 5px;
+  font-weight: 900;
+  text-decoration-line: underline;
+}
+
+#p {
+  margin-top: 10px;
 }
 
 #firma {
+  color: var(--footer-color);
   font-style: italic;
+  margin-top: 10px;
 }
 
 footer {
@@ -139,7 +151,8 @@ footer {
   justify-content: space-around;
   align-items: start;
   position: relative;
-  padding-bottom: 200px;
+  padding-top: 20px;
+  padding-bottom: 150px;
   height: 200px;
   bottom: 0;
   left: 0;
@@ -231,7 +244,7 @@ iframe {
     }
 }
 
-@media(max-width: 1040px){
+@media(max-width: 1027px){
   /*Tablets*/
 
   nav ul li a {
@@ -296,11 +309,17 @@ iframe {
     align-items: start;
   }
 }
-@media(max-width: 555px){
+
+@media(max-width: 800px){
   /*Smartphones*/
+
   nav ul li a {
     font-size: 10px;
   }
+}
+
+@media(max-width: 590px){
+  /*Smartphones*/
 
   .rel {
     position: relative;
@@ -338,9 +357,6 @@ iframe {
   }
 }
 
-@media(max-width: 555px){
+@media(max-width: 450px){
   /*Smartphones*/
-  nav ul li a {
-    font-size: 10px;
-  }
 }
