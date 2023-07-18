@@ -21,23 +21,22 @@
         </nav></p>
     </header>
     <main id="main2" class="main2">
-        <section class="formSection">
-        <div class="formSection__content">
-        </div>
-        <form action="https://formspree.io/f/xyyqyrgy" method="POST" class="formSection__form">
-            <fieldset class="formSection__fieldset">
-            <label for="full-name" class="formSection__label">Nombre completo</label>
-            <input type="text" name="name" id="full-name" class="formSection__input" placeholder="Nombre y apellido" required=""><br>
-            <label for="email-address" class="formSection__label">Correo electrónico</label>
-            <input type="email" name="replyto" id="email-address" class="formSection_input" placeholder="email@dominio.com" required=""><br>
-            <label for="subject" class="formSection__label">Asunto</label>
-            <textarea rows="1" name="message" id="message" class="formSection__textarea" placeholder="Escribe un asunto" required=""></textarea><br>
-            <label for="message" class="formSection__label">Mensaje</label>
-            <textarea rows="5" name="message" id="message" class="formSection__textarea" placeholder="Escribe tu mensaje" required=""></textarea>
-            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-            </fieldset>
-            <input type="submit" value="Enviar" id="submit" class="formSection__submit">
-        </form>
+        <section id="formulario">
+            <form class="formulario" action="https://formspree.io/f/xyyqyrgy" method="post">
+
+                    <h1 class="titulo-f">Ingresa tus Datos y el Mensaje en Cuestion</h1>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                        <label for="email">Correo Electronico:</label>
+                        <input type="text" name="email" id="email" required>
+                        <label for="asunto">Asunto:</label>
+                        <textarea name="asunto" id="asunto" cols="30" rows="1" required></textarea>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="5" required></textarea>
+                        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+
+                <button type="submit" name="submit" id="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer id="pie">

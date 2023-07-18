@@ -95,10 +95,6 @@ body {
   color: var(--buttonborder-color);
 }
 
-#main2 {
-  padding: 150px;
-}
-
 .rel {
   position: relative;
   margin: 30px;
@@ -367,5 +363,67 @@ iframe {
     justify-content: center;
     padding: 0;
     width: 20px;
+  }
+}
+
+/*-------------Formulario------------------*/
+
+#main2 {
+  background-image: url(https://washingtonschool.edu.ar/wp-content/themes/washington/img/headers/nivel-primario.jpg);
+  background-size: cover;
+  padding: 20px;
+}
+
+.titulo-f {
+  font-size: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--body-color);
+}
+
+form {
+  max-width: 300px;
+  margin: 0px auto;
+  padding: 10px 20px;
+  background: var(--header-color);
+  opacity: 0.9;;
+  border-radius: 10px;
+}
+
+label {
+  color: var(--body-color);
+}
+
+#nombre, #email, textarea {
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 0px;
+  width: 100%;
+  background-color: var(--body-color);
+  color: var(--buttonborder-col);
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: var(--body-color);
+  background-color: var(--header2-color);
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  margin-bottom: 10px;
+}
+
+@media(max-width: 350px){
+  /*Smartphones*/
+
+  .titulo-f {
+    font-size: 20px;
   }
 }
