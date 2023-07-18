@@ -255,8 +255,8 @@ iframe {
     bottom: 0;
     left: 0;
     right: 0;
-    row-gap: 30px;
-    column-gap: 30px;
+    row-gap: 50px;
+    column-gap: 50px;
     font-size: 15px;
   }
 
@@ -282,7 +282,7 @@ iframe {
     align-items: start;
   }
 }
-@media(max-width: 540px){
+@media(max-width: 555px){
   /*smartphones*/
 
   .rel {
