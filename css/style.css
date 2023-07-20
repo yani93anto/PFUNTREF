@@ -118,6 +118,14 @@ body {
   height: 200px;
 }
 
+#quienes {
+  text-align: center;
+  border-color: var(--header2-color);
+  border-radius: 10deg;
+  border-style: double;
+  padding: 20px;
+}
+
 .hide {
   position: absolute;
   opacity: 0;
