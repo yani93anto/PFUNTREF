@@ -6,7 +6,6 @@
     <title>Contacto</title>
     <link rel="shortcut icon" href="./img/letra-u.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <!--<script src="https://kit.fontawesome.com/cee4e31326.js" crossorigin="anonymous"></script>-->
 </head>
 <body>
     <header>
@@ -25,13 +24,13 @@
             <form class="formulario" action="https://formspree.io/f/xyyqyrgy" method="post">
                     <h1 class="titulo-f">Ingresa tus Datos y el Mensaje en Cuestión</h1>
                         <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre" id="nombre" required>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" required>
                         <label for="email">Correo Electronico:</label>
-                        <input type="text" name="email" id="email" required>
+                        <input type="text" name="email" id="email" placeholder="ep2000@mail.com" required>
                         <label for="asunto">Asunto:</label>
-                        <textarea name="asunto" id="asunto" cols="30" rows="1" required></textarea>
+                        <textarea name="asunto" id="asunto" cols="30" rows="1" placeholder="Escribe el asunto" required></textarea>
                         <label for="mensaje">Mensaje:</label>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="5" required></textarea>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Escribe tu mensaje" required></textarea>
                         <input type="hidden" name="_subject" id="email-subject" value="Envio de Contacto">
                 <button type="submit" name="submit" id="submit">Enviar</button>
             </form>
